@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:clipChildren="true"
+    android:padding="8dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnCall"
+            android:layout_toStartOf="@+id/btnCall">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Station name"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvStationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Colombo"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Station code"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/black"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvStationCodeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name : MMD"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tvStationCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Code : 003"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnCall"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@color/transparent"
+            android:background="@drawable/icon_call"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

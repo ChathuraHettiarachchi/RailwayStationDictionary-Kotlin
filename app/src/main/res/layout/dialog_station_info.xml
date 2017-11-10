@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_white_rounded"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Station name"
+        android:textSize="14sp"
+        android:textColor="@color/light_black"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Colombo"
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Station code"
+        android:textSize="14sp"
+        android:textColor="@color/light_black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCodeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: mmmm"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Code:003"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Station type"
+        android:textSize="14sp"
+        android:textColor="@color/light_black"/>
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="St."
+        android:textSize="18sp"
+        android:layout_marginLeft="16dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Distence"
+        android:textSize="14sp"
+        android:textColor="@color/light_black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvMiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miles : 1111"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Km : 1111"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Height"
+        android:textSize="14sp"
+        android:textColor="@color/light_black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvFeets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feets : 1111"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tvMeters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Meters : 1111"
+            android:textSize="18sp"
+            android:layout_marginLeft="16dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+
+            <Button
+                android:id="@+id/btnContacat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:stateListAnimator="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:maxWidth="200dp"
+                android:text=""
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"/>
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:stateListAnimator="@null"
+                android:text="Cancel"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAllCaps="false"
+                android:textColor="@color/gray"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
